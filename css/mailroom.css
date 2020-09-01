@@ -1,0 +1,86 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+/* each section */
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* the contents*/
+main section div {
+    width: 100%;
+    max-width: 600px;
+}
+/* text */
+section .content-text {
+    padding: 40px;
+}
+.content-text h3 {
+    font-size: var(--subtitle);
+    text-transform: uppercase;
+}
+.content-text p {
+    text-align: justify;
+    font-size: var(--pre-title);
+    margin-top: 10px;
+    line-height: 25px;
+}
+/* the image */
+section .image-container {
+    padding: 30px;
+}
+.image-container img {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 888px) {
+    main section div{
+        width: 50%;
+    }
+    main section:last-child {
+        flex-direction: row-reverse;
+    }  
+} 
+/* .container {
+    width: 80%;
+    margin: 40px auto 60px;
+    display: grid;
+    gap: 60px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.container section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+main section > div {
+    min-width: 300px;
+    max-width: 500px;
+}
+.container section:last-child .content-text{
+    flex-direction: row-reverse;
+}
+
+main section > div h3 {
+    
+}
+main section > div p {
+    text-align: justify;
+    font-size: var(--pre-title);
+    margin-top: 10px;
+}
+section .image-container img {
+    width: 100%;
+}
+
+*/
